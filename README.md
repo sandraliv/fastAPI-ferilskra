@@ -12,8 +12,8 @@ I used a local PostgreSQL 16 database myself, and if someone wants to use my API
 
 -----------------------------------------------
 Prerequisites:
-Make sure you have python and pip installed on your computer. You can verify by running the commands:
-`python --version`
+Make sure you have python and pip installed on your computer. You can verify by running the commands: <br>
+`python --version`<br>
 `pip --version`
 
 The steps to take for cloning the project
