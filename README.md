@@ -29,3 +29,4 @@ The steps to take for cloning the project
 `uvicorn main:app --reload`<br>
 
 After starting the server, you can access the SwaggerUI on http://127.0.0.1:8000/docs#/
+![Swagger UI](images/fastAPI-SWAGGER.png "Swagger UI Example")
