@@ -17,15 +17,15 @@ Make sure you have python and pip installed on your computer. You can verify by 
 `pip --version`
 
 The steps to take for cloning the project
-1. Clone the repository:
-  `git clone https://github.com/sandraliv/fastAPI-ferilskra.git `
-  2. I recommend creating a virtual environemtn which isolates the project dependencies to avoid conflict with your own global packages.
-  `python -m venv .venv `
-  `source .venv/bin/activate` #On macOS/Linuz
-  `.venv\Scripts\activate` #Windows
-2. Use pip to install the packages listed in requirements.txt
-`pip install -r requirements.txt`
-3. And to run the application on a server
-`uvicorn main:app --reload`
+1. Clone the repository:<br>
+  `git clone https://github.com/sandraliv/fastAPI-ferilskra.git `<br>
+  2. I recommend creating a virtual environemtn which isolates the project dependencies to avoid conflict with your own global packages.<br>
+  `python -m venv .venv `<br>
+  `source .venv/bin/activate` #On macOS/Linuz<br>
+  `.venv\Scripts\activate` #Windows<br>
+2. Use pip to install the packages listed in requirements.txt<br>
+`pip install -r requirements.txt`<br>
+3. And to run the application on a server<br>
+`uvicorn main:app --reload`<br>
 
 After starting the server, you can access the SwaggerUI on http://127.0.0.1:8000/docs#/
