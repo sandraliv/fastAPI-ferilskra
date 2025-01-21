@@ -2,9 +2,9 @@ from pydantic import BaseModel, ConfigDict
 from enum import Enum
 
 class Month(str, Enum):
-    JUN = "júní"
-    MAI = "maí"
-    DES = "des"
+    JUN = "JUN"
+    MAI = "MAI"
+    DES = "DES"
 
 #pydantic model for an item requests
 '''A Pydantic model is a Python class used to define and validate data structures. 

@@ -1,12 +1,12 @@
-from sqlalchemy import Column, Integer, String, Float, Enum
+from sqlalchemy import Column, Integer, String, Float
 from db.base_class import Base
 from enum import Enum as PyEnum
 from sqlalchemy.dialects.postgresql import ENUM
 
 class Month(PyEnum):
-    JUN = "júní"
-    MAI = "maí"
-    DES = "des"
+    JUN = "JUN"
+    MAI = "MAI"
+    DES = "DES"
 
 class CourseDB(Base):
     __tablename__ = "courses"
