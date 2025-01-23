@@ -20,8 +20,6 @@ def db_commit(db: Session):
     except:
         db.rollback()
         raise
-    finally:
-        db.close()
 
 def get_db():
     db = SessionLocal()

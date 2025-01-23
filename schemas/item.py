@@ -1,5 +1,6 @@
 from pydantic import BaseModel, ConfigDict
 from enum import Enum
+from typing import Optional
 
 class Month(str, Enum):
     JUN = "JUN"
@@ -32,5 +33,16 @@ class Course(BaseModel):
     school_id: str
     year: int
     month: Month
+
+    model_config = ConfigDict(from_attributes=True)
+
+    #pydantic model for a course update
+class CourseUpdate(BaseModel):
+    name: Optional[str] = None
+    grade: Optional[float] = None
+    credits: Optional[int] = None
+    school_id: Optional[str] = None
+    year: Optional[int] = None
+    month: Optional[Month] = None
 
     model_config = ConfigDict(from_attributes=True)

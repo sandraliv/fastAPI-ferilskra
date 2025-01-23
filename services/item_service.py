@@ -11,6 +11,7 @@ def create_item(db: Session, item: createCourse) -> CourseDB:
     db.add(item_db)
     db.commit()
     db.refresh(item_db)
+    print(item_db)
     return item_db
 
 def delete_item(db: Session, item_id: int) -> None:
