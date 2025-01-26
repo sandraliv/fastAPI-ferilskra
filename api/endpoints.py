@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from db.session import get_db
 from schemas.courses_pydantic import createCourse, Course, CourseUpdate
-from services.course_service import get_all_courses, get_item_by_id, create_item, delete_item
+from services.course_service import *
 from db.session import db_commit
 from typing import List
 
@@ -23,9 +23,10 @@ def read_item(course_id: int, db: Session = Depends(get_db)):
 def all_courses(db: Session = Depends(get_db)):
     try:
         return get_all_courses(db)
-    except ValueError as e:
+    except Exception as e:
         raise HTTPException(status_code=404, detail=str(e))
     
+
 ''' ------------ POST METHODS ------------ '''
  #adds a course
 @router.post("/", response_model=Course)
