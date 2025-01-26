@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Float
-from db.base_class import Base
+from db.base_class_db import Base
 from enum import Enum as PyEnum
 from sqlalchemy.dialects.postgresql import ENUM
 

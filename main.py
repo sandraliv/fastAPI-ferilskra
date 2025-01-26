@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from db.config import settings
 from db.session import engine 
-from db.base_class import Base
-from api.items import router as items_router
+from db.base_class_db import Base
+from api.endpoints import router as items_router
 
 def create_tables():         
 	Base.metadata.create_all(bind=engine) 

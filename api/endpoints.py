@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from db.session import get_db
-from schemas.item import createCourse, Course, CourseUpdate
-from services.item_service import get_all_courses, get_item_by_id, create_item, delete_item
+from schemas.courses_pydantic import createCourse, Course, CourseUpdate
+from services.course_service import get_all_courses, get_item_by_id, create_item, delete_item
 from db.session import db_commit
 from typing import List
 

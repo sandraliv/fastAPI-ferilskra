@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from fastapi import HTTPException
-from db.models.item import CourseDB
-from schemas.item import createCourse
+from db.models.db_models import CourseDB
+from schemas.courses_pydantic import createCourse
 
 def get_item_by_id(db: Session, item_id: int) -> CourseDB:
     return db.query(CourseDB).filter(CourseDB.id == item_id).first()
