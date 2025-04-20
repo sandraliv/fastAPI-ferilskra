@@ -54,7 +54,7 @@ class Course(BaseModel):
 
     model_config = ConfigDict(from_attributes=True)
 
-    #pydantic model for a course update
+#pydantic model for a course update
 class CourseUpdate(BaseModel):
     name: Optional[str] = None
     grade: Optional[float] = None

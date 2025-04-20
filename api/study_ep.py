@@ -5,7 +5,6 @@ from schemas.courses_pydantic import Study, Course
 from services.course_service import *
 from services.study_service import *
 from db.session import db_commit
-from typing import List
 
 router = APIRouter()
 
